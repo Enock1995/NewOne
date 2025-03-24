@@ -1,0 +1,140 @@
+
+.background-image{
+    background: black;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+    background-position: center;
+    position: relative;
+}
+
+
+.background-image img{
+    height: 55vh;
+    width: 100%;
+    border-radius: 7px 7px 7px 7px;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+
+
+.text-container{
+    position: absolute;
+    top: 1%;
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+
+.space-div{height: 7vh;}
+
+
+
+.scroll{
+    font-family: serif;
+    width: 80%;
+    font-size: 14pt;
+    text-shadow: 0.4vw 0.2vw skyblue;
+    font-weight: bold;
+    position: relative;
+    border-radius: 7px 7px 7px 7px;
+}
+
+
+.scroll-container{
+    border: 2px solid black;
+}
+
+
+
+/* media queries */
+@media(min-width: 769px){
+.container{
+    display: flex;
+    overflow-y: auto;
+}
+
+
+#sidebar{
+position: fixed;
+    top: 0;
+    left: 0 !important;
+    width: 24.2%;
+    display: block;
+}
+
+.main-body{
+    width: 50%;
+    margin-left: 25%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.top-text{
+    width: 100%;
+}
+
+.right-sidebar{
+    width: 25%;
+}
+
+.footer{
+    width: 75%;
+    margin-left: 25%;
+}
+
+.medium-screen-head{
+    margin-left: 25%;
+}
+
+.right-content{
+    margin-left: 75.5%;
+    width: 24.5%;
+    position: fixed;
+}
+
+.lg-hdr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26pt;
+    text-align: center;
+}
+
+.lg-hdr2{
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+
+
+
+
+@media(min-width: 769px){ .grid-container{
+display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+     padding: 1.5%; 
+     height: auto;
+     overflow-x: hidden;  
+}
+
+.grid-element: {
+    width: 100%;
+    padding: 2%; 
+    height: auto; 
+    min-height: 5%; 
+    overflow-x: hidden; box-sizing: border-box;
+}
+    
+}
+
+
+@media(min-width: 1000px){ .grid-container{
+    font-family: verdana;
+}
+    
+}
